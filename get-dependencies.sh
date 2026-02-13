@@ -10,6 +10,10 @@ pacman -Syu --noconfirm   \
     freepats-general-midi \
     libdecor              \
     sdl2                  \
+    sdl2_gfx              \
+    sdl2_image            \
+    sdl2_mixer            \
+    sdl2_ttf              \
     timidity++            \
     unzip
 
@@ -18,10 +22,7 @@ echo "---------------------------------------------------------------"
 get-debloated-pkgs --add-common --prefer-nano
 
 # Comment this out if you need an AUR package
-make-aur-package SDL2_mixer
-make-aur-package SDL2_ttf
-make-aur-package SDL2_image
-make-aur-package SDL2_gfx
+#make-aur-package
 
 # If the application needs to be manually built that has to be done down here
 echo "Making nightly build of OpenClaw..."
