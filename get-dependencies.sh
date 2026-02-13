@@ -14,7 +14,8 @@ pacman -Syu --noconfirm   \
     SDL2_ttf              \
     SDL2_image            \
     SDL2_gfx              \
-    timidity++
+    timidity++            \
+    unzip
 
 echo "Installing debloated packages..."
 echo "---------------------------------------------------------------"
@@ -45,3 +46,5 @@ mv -v clacon.ttf ../AppDir/bin
 mv -v config.xml ../AppDir/bin
 mv -v ASSETS.ZIP ../AppDir/bin
 mv -v console02.tga ../AppDir/bin
+wget https://github.com/pjasicek/OpenClaw/releases/download/v0.3/OpenClaw_v1.03.zip -O temp.zip && unzip -j temp.zip CLAW.REZ && rm temp.zip
+mv -v CLAW.REZ ../AppDir/bin
