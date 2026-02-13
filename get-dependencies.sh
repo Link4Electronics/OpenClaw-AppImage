@@ -15,8 +15,7 @@ pacman -Syu --noconfirm   \
     sdl2_image            \
     sdl2_mixer            \
     sdl2_ttf              \
-    timidity++            \
-    unzip
+    timidity++
 
 echo "Installing debloated packages..."
 echo "---------------------------------------------------------------"
@@ -40,14 +39,12 @@ cmake .. \
     -DCMAKE_BUILD_TYPE=Release \
     -DCMAKE_POLICY_VERSION_MINIMUM=3.5
 make -j$(nproc)
-ls
 cd ../Build_Release
-ls
-mv -v openclaw ../AppDir/bin
-mv -v SAVES.XML ../AppDir/bin
-mv -v clacon.ttf ../AppDir/bin
-mv -v config.xml ../AppDir/bin
-mv -v ASSETS.ZIP ../AppDir/bin
-mv -v console02.tga ../AppDir/bin
-wget https://github.com/pjasicek/OpenClaw/releases/download/v0.3/OpenClaw_v1.03.zip -O temp.zip && unzip -j temp.zip CLAW.REZ && rm temp.zip
-mv -v CLAW.REZ ../AppDir/bin
+mv -v openclaw ../../AppDir/bin
+mv -v SAVES.XML ../../AppDir/bin
+mv -v clacon.ttf ../../AppDir/bin
+mv -v config.xml ../../AppDir/bin
+mv -v ASSETS.ZIP ../../AppDir/bin
+mv -v console02.tga ../../AppDir/bin
+wget https://github.com/pjasicek/OpenClaw/releases/download/v0.3/OpenClaw_v1.03.zip -O temp.zip && bsdtar -xf temp.zip CLAW.REZ && rm temp.zip
+mv -v CLAW.REZ ../../AppDir/bin
