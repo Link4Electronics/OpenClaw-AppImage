@@ -43,4 +43,5 @@ mv -v openclaw ../AppDir/bin
 mv -v SAVES.XML ../AppDir/bin
 mv -v clacon.ttf ../AppDir/bin
 mv -v config.xml ../AppDir/bin
+mv -v ASSETS.ZIP ../AppDir/bin
 mv -v console02.tga ../AppDir/bin
