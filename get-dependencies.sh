@@ -40,7 +40,9 @@ cmake .. \
     -DCMAKE_BUILD_TYPE=Release \
     -DCMAKE_POLICY_VERSION_MINIMUM=3.5
 make -j$(nproc)
+ls
 cd ../Build_Release
+ls
 mv -v openclaw ../AppDir/bin
 mv -v SAVES.XML ../AppDir/bin
 mv -v clacon.ttf ../AppDir/bin
