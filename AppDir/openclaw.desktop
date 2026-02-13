@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=OpenClaw
+Comment=Reimplementation of Captain Claw (1997) platformer
+Exec=openclaw
+Icon=openclaw
+Terminal=false
+Categories=Game;Platform;Adventure
