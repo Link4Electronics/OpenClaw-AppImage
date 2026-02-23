@@ -1,3 +1,4 @@
+#!/bin/false
 dir=${XDG_CONFIG_HOME:-~/.config}/openclaw
 if [ ! -f "dir"/config.xml ]; then
   mkdir -p "$dir"
